@@ -9,7 +9,7 @@ def line
   else
   base_string= base_string<<": "
   katz_deli.each_with_index {|item, index|
-  hash[item] = index
+  base_string= base_string<<index<<". "<<katz_deli[index]
 }
   
   
