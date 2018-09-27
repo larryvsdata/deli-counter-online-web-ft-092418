@@ -7,7 +7,11 @@ def line
   if katz_deli.size==0 
     return base_string<<"empty."
   else
-  base_string= base_string<<":"
+  base_string= base_string<<": "
+  katz_deli.each_with_index {|item, index|
+  hash[item] = index
+}
+  
   
     return 
   end
