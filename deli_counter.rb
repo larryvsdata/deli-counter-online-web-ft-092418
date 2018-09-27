@@ -11,9 +11,7 @@ def line
   katz_deli.each_with_index {|item, index|
   base_string= base_string<<index<<". "<<katz_deli[index]
 }
-  
-  
-    return 
+  return base_string
   end
 end
   
